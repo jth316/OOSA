@@ -24,5 +24,16 @@ for i in range (1,9):
                 print("(",i,",",j,")","to","(",ii,",",jj,")","distance",distance)
 
 
+#Task T04: Controlling Loops
+
+def sqrColours():
+    for i in range (1,9):
+        for j in rangr (1,9):
+            if(((i+j)%)==0):
+                colour="black"
+            else:
+                colour="white"
+            print("(",i,",",j,")",colour)
+        print("(",i,",",j,")",colour)
 
 
