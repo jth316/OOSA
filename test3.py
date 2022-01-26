@@ -26,8 +26,35 @@ def sort():
     while len(data)>0:
         sortdata.append('x')
         data.remove('x')
-    print(sortdata)
 
-sort()
+def minvalu(data, n):
+    #print(data) #to see original array as it is random
+    x=data[0]
+    p=0
+    for i in range (1,n):
+        if data[i]<x:
+            x=data[i]
+            p=i
+    print(x)
+    sortdata.append(x)
+    data=np.delete(data, np.where(data == p))
+    #print(data1)
+    #print(sortdata)
 
+data=np.random.random((5))
+print(data)
+sortdata=[]
+for n in data:
+    x=data[0]
+    p=0
+    for i in range (1,len(data)):
+        if data[i]<x:
+            x=data[i]
+            p=i
+    print(x)
+    sortdata.append(x)
+    data.remove(x)
+    #y=np.delete(data, np.where(data==p))
+    #print(y)
+print(sortdata)
 
